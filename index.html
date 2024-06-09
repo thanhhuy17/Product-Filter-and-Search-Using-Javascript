@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========= Link CSS ========== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ========= Link Font ========== -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');</style>
+    <title>Product Filter and Search Using Javascript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search__container" id="search-container">
+            <input type="search" class="search__input" id="search-input"
+            placeholder="Search product name here..">
+
+            <button class="button__search" id="button-search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button__value" onclick="fillterProducts('All')">All</button>
+            <button class="button__value" onclick="fillterProducts('Topwear')">Topwear</button>
+            <button class="button__value" onclick="fillterProducts('Bottomwear')">Bottomwear</button>
+            <button class="button__value" onclick="fillterProducts('Jacket')">Jacket</button>
+            <button class="button__value" onclick="fillterProducts('Watch')">Watch</button>
+        </div>
+        <div id="products">
+            
+        </div>
+    </div>
+    <!-- ========= Link JavaSdript========== -->    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
